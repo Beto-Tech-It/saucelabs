@@ -6,13 +6,16 @@ import { createEsbuildPlugin } from "@badeball/cypress-cucumber-preprocessor/esb
 export default defineConfig({
   e2e: {
     baseUrl: "https://www.saucedemo.com/",
-    specPattern: 'cypress/e2e/**/*.feature',
+    specPattern: "cypress/e2e/**/*.feature",
     supportFile: "cypress/support/e2e.ts",
 
-    async setupNodeEvents(
-      on: Cypress.PluginEvents,
-      config: Cypress.PluginConfigOptions
-    ): Promise<Cypress.PluginConfigOptions> {
+    async setupNodeEvents(on, config) {
+      // 👇 AQUÍ se define la ruta de los steps
+      config.env = {
+        ...config.env,
+        stepDefinitions: "cypress/e2e/web/steps/**/*.ts",
+      };
+
       await addCucumberPreprocessorPlugin(on, config);
 
       on(
