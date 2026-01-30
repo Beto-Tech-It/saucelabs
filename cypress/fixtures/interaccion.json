@@ -1,0 +1,3 @@
+{
+    "opcionPrenda":".inventory_list .inventory_item .inventory_item_description .inventory_item_label a"
+}

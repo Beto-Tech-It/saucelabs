@@ -4,11 +4,11 @@ Feature: Login en la aplicacion saucemo
     Given que el usuario se encuentra en la pagina inicial de saucedemo
 
   Scenario: Login exitoso
-    When ingresa correctamente las credenciales validas
+    When ingresa correctamente el user "standard_user" y el password "secret_sauce"
     Then el usuario deberia ver el dashboard
 
   Scenario Outline: Validar otras opciones de logueo
-    When ingresa correctamente el user "<username>" y el password "<password>"
+    When ingresa correctamente el user "<user>" y el password "<password>"
 
     Examples:
       | user                    | password     |
