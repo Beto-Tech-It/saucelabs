@@ -1,3 +1,15 @@
 {
-    "opcionPrenda":".inventory_list .inventory_item .inventory_item_description .inventory_item_label a"
+    "opcionPrenda":".inventory_list .inventory_item .inventory_item_description .inventory_item_label a",
+    "agregar_carrito":"#add-to-cart",
+    "boton_carrito":".shopping_cart_link",
+    "checkout":"#checkout",
+    "first_name":"#first-name",
+    "last_name":"#last-name",
+    "postal":"#postal-code",
+    "continue":"#continue",
+    "finalizacion":"#finish",
+    "return":"#back-to-products",
+    "agregar_varios":".pricebar .btn.btn_primary.btn_small.btn_inventory "
 }
+
+

@@ -11,7 +11,7 @@ export class IngresoCredenciales{
         cy.fixture("login").then((elements) => {
             cy.get(elements.login_user).type(user);
             cy.get(elements.login_pass).type(password);
-            cy.get(elements.button_click).click().wait(2000);
+            cy.get(elements.button_click).click();
         });
 
     }

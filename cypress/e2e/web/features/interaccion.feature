@@ -17,6 +17,10 @@ Examples:
 |Sauce Labs Onesie|
 |Test.allTheThings() T-Shirt (Red)|
 
+Scenario: El usuario quiere agregar todos los elementos al carrito
+
+When el usuario agrega todos los elementos al carrito
+
 
 
 
